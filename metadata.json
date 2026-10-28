@@ -1,0 +1,6 @@
+{
+  "name": "8Ball Strike Overlay & Aim Master",
+  "description": "Advanced aiming guide, trajectory calculator, power meter, ball spin control, and auto-shoot assistant for 8-ball pool games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
