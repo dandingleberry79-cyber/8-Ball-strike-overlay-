@@ -4,6 +4,7 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
+import ShotFinder from './ShotFinder';
 import { 
   Crosshair, Zap, RotateCcw, Play, Settings, Smartphone, 
   HelpCircle, Eye, EyeOff, Sliders, Shield, Award, Sparkles, 
@@ -774,19 +775,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="border-2 border-dashed border-slate-700 rounded-2xl p-8 flex flex-col items-center justify-center gap-4 text-center bg-slate-950/40 hover:border-emerald-500/50 transition-colors cursor-pointer">
-              <Upload className="w-10 h-10 text-emerald-400 animate-bounce" />
-              <div>
-                <h3 className="text-sm font-bold text-white">Drop your pool game screenshot here</h3>
-                <p className="text-xs text-slate-400 mt-1">Supports PNG, JPG, or screen recording frames</p>
-              </div>
-              <label className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-xl cursor-pointer shadow-lg shadow-emerald-600/20 transition-all">
-                Browse Files
-                <input type="file" className="hidden" accept="image/*" onChange={() => {
-                  setStatusMessage("Screenshot uploaded and calibrated successfully! Aim guide overlaid.");
-                }} />
-              </label>
-            </div>
+            <ShotFinder />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-slate-950/60 p-4 rounded-2xl border border-slate-800">
